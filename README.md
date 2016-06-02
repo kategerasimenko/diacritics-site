@@ -24,7 +24,7 @@ Input is a .txt file in UTF-8 encoding. Its name should be 'output_sent.txt' or 
 
 ###SITE
 If you want to use the site, you should first install pickle module. Install pip if it is absent, open the command line and type:
-<br/>**pip install pickle**
+<br/>**pip install flask**
 <br/>Then you should change direcrory in the command line to the one where files and folders from folder 'site' in this repository are stored.
 Then type:
 <br/>**python run.py**
