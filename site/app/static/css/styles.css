@@ -1,0 +1,122 @@
+﻿body {
+	font-family:segoe ui light;
+	font-weight: bold;
+}
+
+header {
+	background-color: #3eb489;
+	color: white;
+	padding:20px 20px 20px 100px;
+	margin: -10px -8px 0px -8px;
+	font-size: 30pt;
+	font-style:italic;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.instruction {
+	clear:both;
+	width: 25%;
+	float:left;
+	font-style:italic;
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: right;
+	padding: 0px 20px 0px 50px;
+}
+
+.step {
+	clear:both;
+	padding:30px 20px 0px 20px;
+}
+
+#selectlanguage {
+	float:left;
+}
+
+#lang {
+	border:1px solid #cdcdcd;
+	outline:none;
+	height:30px;
+	width:250px;
+	font-size:12pt;
+	font-family:segoe ui light;
+	font-weight: bold;
+	margin: 3px 0px 0px 0px;
+	padding:0px 0px 2px 10px;
+}
+
+#entertext {
+	margin: 3px 0px 0px 0px;
+	float:left;
+	width:50%;
+}
+
+#text {
+	border:1px solid #ababab;
+	width: 100%;
+	height:300px;
+	size: fixed;
+	font-size:10pt;	
+	font-family: segoe ui light;
+	font-weight: bold;
+	padding: 2px 2px 2px 5px;
+}
+#buttons {
+	margin:10px 0px 0px 0px;
+	clear:both;
+}
+
+#send {
+	float:left;
+	width:200px;
+	height:35px;
+	text-align:center;
+	padding:6px 0px 10px 0px;
+	background-color:#3eb489;
+	color:white;
+	outline: none;
+	border:0 none;
+	font-family:segoe ui light;
+	font-weight:bold;
+	font-size:11pt;
+	border-radius:5px;
+}
+
+#send:active {
+	background-color:#61c9a3;
+}
+
+#introduction {
+	padding:20px 0px 0px 0px;
+	text-align:center;
+	margin-left: auto ;
+	margin-right: auto ;
+	width:60%;
+}
+
+#restored {
+	display:none;
+}
+
+#loading {
+	padding: 0px 0px 0px 15px;
+	height: 31px;
+	display:none;
+}
+
+#diacritics {
+	float:left;	
+	margin:4px 0px 0px 0px;
+	width: 52%;
+}
+
+#restoredtext {
+	float:left;
+	font-size:10pt;	
+	margin:8px 0px 0px 0px;
+	width: 52%;
+}
+footer {
+	clear:both;
+	margin: 50px 0px 0px 0px;
+}

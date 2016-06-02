@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="static/js/script.js"></script>
+	<title>Автоматическое восстановление диакритик</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="static/css/styles.css">
+	<link rel="shortcut icon" href="static/img/logo.jpg" type="image/x-icon">
+</head>
+<body>
+<header>АВТОМАТИЧЕСКОЕ ВОССТАНОВЛЕНИЕ ДИАКРИТИК В ТЕКСТЕ</header>
+<div id="introduction">
+Этот сервис позволяет восстановить диакритики в текстах на малых языках России. Автоматическая система допускает ошибки, поэтому текст необходимо перечитать перед использованием.
+</div>
+<div>
+<form action="." method="POST" id="form">
+<div class="step">
+<div class="instruction">1. Выберите язык текста</div>
+<div id="selectlanguage">
+<select name="selectlang" id="lang">
+	<option selected="selected">Башкирский</option>
+	<option>Бурятский</option>
+	<option>Вепсский</option>
+	<option>Горномарийский</option>
+	<option>Калмыцкий</option>
+	<option>Коми</option>
+	<option>Марийский</option>
+	<option>Татарский</option>
+	<option>Удмуртский</option>
+	<option>Чувашский</option>
+</select>
+</div>
+</div>
+<div class="step">
+<div class="instruction">2. Введите текст</div>
+<div id="entertext">
+<textarea spellcheck=false id="text"></textarea>
+<div id="buttons">
+<input type="button" name="my-form" value="Восстановить диакритики" id="send">
+<img src="static/img/blue-spinner.gif" alt="loading" id="loading">
+</div>
+</div>
+</div>
+</form>
+<div class="step" id="restored">
+<div class="instruction"></div>
+<div id="restoredtext"><p></p></div>
+<div class="instruction">Дополнительные символы: </div>
+<div id="diacritics"><p></p></div>
+</div>
+</div>
+<footer></br></footer>
+</body>
+</html>
