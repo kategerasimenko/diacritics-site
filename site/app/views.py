@@ -13,5 +13,4 @@ def index():
     data = request.form
     lang = data['selectlang']
     new_text,dias = diacritics_restoration.everything(data['text'],lang)
-    new_text = new_text.replace('\n','</br>')
     return jsonify({'text': new_text,'dias': dias})
