@@ -3,26 +3,26 @@
 <p>The code is written in Python.</p>
 <p>Contact information: Ekaterina Gerasimenko, katgerasimenko@gmail.com</p>
 
-###GET JSONS
+### GET JSONS
 In the folder "get jsons" you can find a code that creates files with probabilities necessary for further work. 
 There are two scripts there: get_jsons and get_bigrams.
 For each script there should be an input file and both scripts require a .csv file with alphabets.
 
-####Alphabets (alphs.csv):
+#### Alphabets (alphs.csv):
 There are four cells. The first one is alphsbet with special letters and the second one is alphabet without spectial letters but wuth their equivalents. There should be one-to-one correspondence and, therefore, these two alphabets should have equal length. The third and the forth cells are special letters and their equivalents.
 
-####get_jsons.py:
+#### get_jsons.py:
 Input is a .txt file in UTF-8 encoding. Its name should be 'input_new.txt' or you can change it in the code. It should contain words with correctly used special symbols without punctuation marks and capitalization separated by '##'. For example:
 <br/>*\#\#my##name##is##kate##i##love##coding*
 
-####get_bigrams.py:
+#### get_bigrams.py:
 Input is a .txt file in UTF-8 encoding. Its name should be 'output_sent.txt' or you can change it in the code. It should contain sentences with correctly used special symbols in words. For example:
 <br/>*My name is Kate. I love coding.*
 
 <br/>If you want to add a new language and collect probabilities, you should create a folder and put alphabets and input files in it. Then you should change "for lang in langs:" in code to "for lang in ['your_folder_name']:".
 
 
-###SITE
+### SITE
 If you want to use the site, you should first install pickle module. Install pip if it is absent, open the command line and type:
 <br/>**pip install flask**
 <br/>Then you should change direcrory in the command line to the one where files and folders from folder 'site' in this repository are stored.
